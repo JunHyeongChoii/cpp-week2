@@ -23,6 +23,9 @@ int game(int answer)
         {
             break;
         }
+
+        std::cout << 5-i << "  chances left.\n";
+
         int strike = 0;
         int ball = 0;
         int guess;
