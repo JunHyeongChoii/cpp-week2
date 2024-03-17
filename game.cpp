@@ -14,9 +14,15 @@ int game(int answer)
     ans.push_back(aa);
     ans.push_back(ab);
     ans.push_back(ac);
+    
+    int i = 0;
 
     while(true)
     {
+        if(i == 5)
+        {
+            break;
+        }
         int strike = 0;
         int ball = 0;
         int guess;
@@ -57,7 +63,7 @@ int game(int answer)
             }
         }
         std::cout << "Strikes: " << strike << ", Balls: " << ball << std::endl;
-
+        i++;
     }
     
     return 0;
