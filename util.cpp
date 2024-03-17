@@ -21,16 +21,16 @@ int util()
         }
         else if(i == 0 && number !=0)
         {
-            asd.push_back(number);
+            ans.push_back(number);
             i++;
         }
         else
         {
-            asd.push_back(number);
+            ans.push_back(number);
         }
 
     }
-    answer = asd[0] * 100 + asd[1] * 10 + asd[2];
+    answer = ans[0] * 100 + ans[1] * 10 + ans[2];
 
     
     
