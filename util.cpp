@@ -7,7 +7,7 @@ int util()
 {
  ///a1111
     int answer = 0;
-    std::vecotr <int> ans;
+    std::vector <int> ans;
     unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
     std::mt19937 gen(seed);
 
@@ -17,7 +17,7 @@ int util()
         int number = dis(gen);
         if( i == 0 && number == 0)
         {
-            continue
+            continue;
         }
         else if(i == 0 && number !=0)
         {
