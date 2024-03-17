@@ -6,6 +6,6 @@ int util()
 
     std::cout << "Enter a answer: " ;
     std::cin >> answer;
-    int a = 0;
+    
     return answer;
 }
