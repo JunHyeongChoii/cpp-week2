@@ -41,7 +41,7 @@ int game(int answer)
        // 159 510
         for(int i = 0 ; i<3; i++)
         {
-            if(ans[i] == gus[i])
+            if(gus[i] == ans[i])
             {
                 strike +=1;
                 continue;
@@ -49,7 +49,7 @@ int game(int answer)
 
             for(int j = 0; j<3; j++)
             {
-                if(ans[i] == gus[j])
+                if(gus[i] == ans[j])
                 {
                     ball+=1;
                     break;
