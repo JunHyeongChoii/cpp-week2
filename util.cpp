@@ -32,7 +32,7 @@ int util()
     }
     answer = asd[0] * 100 + asd[1] * 10 + asd[2];
 
-    std::cout << "Answer is : " << answer << std::endl;
+    
     
     return answer;
 }
