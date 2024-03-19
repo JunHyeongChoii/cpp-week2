@@ -12,23 +12,38 @@ int util()
     std::mt19937 gen(seed);
 
     std::uniform_int_distribution<int> dis(0, 9);
-    for(int i = 0; i<4; i++)
+
+
+    while(true)
     {
         int number = dis(gen);
-        if( i == 0 && number == 0)
+
+        ans.push_back(number);
+
+        if(ans[0] == 0)
         {
-            continue;
-        }
-        else if(i == 0 && number !=0)
-        {
-            ans.push_back(number);
-            i++;
-        }
-        else
-        {
-            ans.push_back(number);
+            ans.pop_back();
         }
 
+        for(int i = 0; i < ans.size(); i++)
+        {
+            for(int j = 0; j < ans.size(); j++)
+            {
+                if(i == j)
+                {
+                    continue;
+                }
+                else if(ans[i] == ans[j])
+                {
+                    ans.pop_back();
+                }
+            }
+        }
+
+        if(ans.size() == 3)
+        {
+            break;
+        }
     }
     answer = ans[0] * 100 + ans[1] * 10 + ans[2];
 
