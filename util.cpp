@@ -13,7 +13,7 @@ int util()
 
     std::uniform_int_distribution<int> dis(0, 9);
 
-
+    ///a
     while(true)
     {
         int number = dis(gen);
